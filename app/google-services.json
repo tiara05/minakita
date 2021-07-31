@@ -1,0 +1,76 @@
+{
+  "project_info": {
+    "project_number": "914914733233",
+    "project_id": "internship-e6cfa",
+    "storage_bucket": "internship-e6cfa.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:914914733233:android:2e1cd32e728842c42dc690",
+        "android_client_info": {
+          "package_name": "com.example.internship"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "914914733233-l5491dtr95n72vd6dk149jv65lcnrrkk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB51HRSeYNJ0Iw4wHOHKnw2uQJZicW3UEo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "914914733233-l5491dtr95n72vd6dk149jv65lcnrrkk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:914914733233:android:8b476a9b04f7a38a2dc690",
+        "android_client_info": {
+          "package_name": "com.example.internshipminakita"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "914914733233-b15gb66n8a7irpgf5grg4b2dddp86ck4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.internshipminakita",
+            "certificate_hash": "7213b36445d97c7d55cad43aebc9a5ad76559ace"
+          }
+        },
+        {
+          "client_id": "914914733233-l5491dtr95n72vd6dk149jv65lcnrrkk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB51HRSeYNJ0Iw4wHOHKnw2uQJZicW3UEo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "914914733233-l5491dtr95n72vd6dk149jv65lcnrrkk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
