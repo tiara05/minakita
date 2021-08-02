@@ -1,4 +1,4 @@
-package com.example.internshipminakita
+package com.example.minakita
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity

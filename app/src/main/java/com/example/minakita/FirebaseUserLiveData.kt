@@ -1,9 +1,8 @@
-package com.example.internshipminakita
+package com.example.minakita
 
 import androidx.lifecycle.LiveData
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
-import java.util.*
 
 class FirebaseUserLiveData : LiveData<FirebaseUser?>() {
     private val firebaseAuth = FirebaseAuth.getInstance()

@@ -1,4 +1,4 @@
-package com.example.internshipminakita
+package com.example.minakita
 
 import org.junit.Test
 
