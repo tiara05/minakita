@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".SettingFragment">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:contentInsetStart="0dp"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:background="@color/main"
+        android:id="@+id/toolbar">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Akun Saya"
+                android:textSize="15sp"
+                android:fontFamily="@font/robotobold"
+                android:textColor="@color/colorWhite"
+                android:layout_gravity="center_vertical"/>
+        </FrameLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nested"
+        android:layout_width="match_parent"
+        android:layout_height="651dp"
+        android:animateLayoutChanges="false"
+        android:focusableInTouchMode="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:baselineAligned="false"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:id="@+id/profile"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="20dp">
+
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/ic_account"
+                    app:backgroundTint="@null"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginBottom="30dp"
+                    app:layout_constraintBottom_toTopOf="@+id/login"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/namaTextView"
+                    android:layout_marginTop="30dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="80dp"
+                    android:layout_marginTop="50dp"
+                    android:fontFamily="@font/robotobold"
+                    android:text="Tiara Rahmania H"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="16sp" />
+
+            </FrameLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="#F3F3F3"/>
+
+            <FrameLayout
+                android:id="@+id/notifikasi"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp">
+
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/ic_baseline_notifications_24"
+                    app:backgroundTint="@null"
+                    app:layout_constraintBottom_toTopOf="@+id/login"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/namaTextView"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="80dp"
+                    android:layout_marginTop="30dp"
+                    android:fontFamily="@font/robotobold"
+                    android:text="Notifikasi/Pengingat Donasi"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="16sp" />
+            </FrameLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:background="#F3F3F3" />
+
+            <FrameLayout
+                android:id="@+id/pengaturan"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp">
+
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/ic_baseline_supervisor_account_24"
+                    app:backgroundTint="@null"
+                    app:layout_constraintBottom_toTopOf="@+id/login"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/namaTextView"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="80dp"
+                    android:layout_marginTop="30dp"
+                    android:fontFamily="@font/robotobold"
+                    android:text="Pengaturan Akun"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="16sp" />
+            </FrameLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:background="#F3F3F3" />
+
+            <FrameLayout
+                android:id="@+id/tentang"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp">
+
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/ic_baseline_info_24"
+                    app:backgroundTint="@null"
+                    app:layout_constraintBottom_toTopOf="@+id/login"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/namaTextView"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="80dp"
+                    android:layout_marginTop="30dp"
+                    android:fontFamily="@font/robotobold"
+                    android:text="Tentang Minakita"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="16sp" />
+            </FrameLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:background="#F3F3F3" />
+
+            <FrameLayout
+                android:id="@+id/faq"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp">
+
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/ic_baseline_list_alt_24"
+                    app:backgroundTint="@null"
+                    app:layout_constraintBottom_toTopOf="@+id/login"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/namaTextView"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="80dp"
+                    android:layout_marginTop="30dp"
+                    android:fontFamily="@font/robotobold"
+                    android:text="FaQ"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="16sp" />
+            </FrameLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:background="#F3F3F3" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp">
+
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/ic_baseline_volume_up_24"
+                    app:backgroundTint="@null"
+                    app:layout_constraintBottom_toTopOf="@+id/login"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/namaTextView"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="80dp"
+                    android:layout_marginTop="30dp"
+                    android:fontFamily="@font/robotobold"
+                    android:text="Aksestabilitas Audio"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="16sp" />
+
+                <Switch
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical|end" />
+
+            </FrameLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:background="#F3F3F3" />
+
+            <FrameLayout
+                android:id="@+id/logout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp">
+
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/ic_baseline_login_24"
+                    app:backgroundTint="@null"
+                    app:layout_constraintBottom_toTopOf="@+id/login"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/namaTextView"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="80dp"
+                    android:layout_marginTop="30dp"
+                    android:fontFamily="@font/robotobold"
+                    android:text="Logout"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="16sp" />
+            </FrameLayout>
+
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+</FrameLayout>

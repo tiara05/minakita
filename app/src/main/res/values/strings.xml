@@ -10,4 +10,26 @@
     <string name="facebook">Facebook</string>
     <string name="logout">Logout</string>
     <string name="login">Login</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="saldoanda">Saldo Anda</string>
+    <string name="rp">Rp</string>
+    <string name="saldo">9.999.999.990</string>
+    <string name="promo">Yuk Kita Berbagi Kebaikan</string>
+    <string name="lihat_semua">Lihat Semua</string>
+
+    <string name="hands">MinaKita adalah sebuah aplikasi yang membantu semua orang untuk melakukan hal kebaikan. </string>
+    <string name="connect">Aplikasi MinaKita juga menghubungkan jutaan kebaikan.</string>
+    <string name="payment">Dengan adanya aplikasi Minakita, semua orang akan mudah untuk melakukan donasi secara online, dengan berbagai metode pembayaran yang bisa kalian pilih.</string>
+
+    <string name="kebijakan">Selamat datang di aplikasi MinaKita, halaman ini dikelola oleh tim MinaKita. Kebijakan privasi yang dimaksud pada halaman ini adalah acuan untuk mengatur
+    dan melindungi penggunaan data dan informasi penting para pengguna MinaKita. Data dan informasi pengguna seperti username, password, foto, email akan terjaga dengan aman ("Data").</string>
+    <string name="administrasi">1.MinaKita tidak mengenakan biaya administrasu jetika anda membuat galang dana.\n\n2. MinaKita hanya mengenakan biaya administrasi dari donasi online yang terkumpul. Dan biaya administrasinya dari keikhlasan donatur.</string>
+    <string name="galang">MinaKita menyediakan wadah agar Anda dapat menggalang dana secara transparan. Setiap donasi yang masuk tercatat oleh sistem sehingga Anda dapat mempertanggungjawabkan jumlah donasi yang terkumpul baik kepada donatur maupun publik luas.
+    \n\nSebagai sarana menggalang dana online, MinaKita juga dapat diakses oleh donatur kapan saja dan dari mana saja.</string>
+    <string name="password">1. Anda buka fitur akun, lalu klik  pengaturan akun.\n2. Klik ubah password.\n3. Masukkan password yang lama, jika  lupa, klik lupa password.\n4. Lalu isi password yang baru.</string>
+    <string name="akun">Akun adalah profil Anda yang tersimpan di sistem MinaKita.
+    \n\nDengan memiliki akun, Anda bisa mengakses semua fitur MinaKita seperti menggalang dana dan berdonasi secara online.</string>
+
 </resources>

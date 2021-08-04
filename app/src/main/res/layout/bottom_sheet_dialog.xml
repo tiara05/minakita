@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="50dp">
+
+        <ImageView
+            android:id="@+id/idIVCourse"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/ic_baseline_check_circle_24" />
+
+        <!--text view for displaying course name-->
+        <TextView
+            android:id="@+id/idTVCourseName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="9dp"
+            android:layout_marginLeft="9dp"
+            android:layout_toEndOf="@id/idIVCourse"
+            android:layout_toRightOf="@id/idIVCourse"
+            android:text="Registrasi Berhasil"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:id="@+id/idTVCourseTracks"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/idTVCourseName"
+            android:layout_marginTop="15dp"
+            android:layout_toEndOf="@id/idIVCourse"
+            android:layout_toRightOf="@id/idIVCourse"
+            android:text="Selamat Datang di MinaKita"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

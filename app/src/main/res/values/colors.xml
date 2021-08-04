@@ -8,4 +8,13 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <color name="colorPrimary">#402588</color>
+    <color name="colorPrimaryDark">#48268c</color>
+    <color name="colorAccent">#06B8A7</color>
+    <color name="colorText">#ee0000</color>
+    <color name="colorPurple">#4D3087</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorGray">#828186</color>
 </resources>

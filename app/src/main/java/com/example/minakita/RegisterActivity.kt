@@ -4,11 +4,13 @@ import android.app.ProgressDialog
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Button
 import android.widget.Toast
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import com.example.minakita.databinding.ActivityRegisterBinding
 import com.firebase.ui.auth.AuthUI
+import com.google.android.material.bottomsheet.BottomSheetDialog
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
 import com.google.firebase.database.DatabaseReference
@@ -23,6 +25,8 @@ class RegisterActivity : AppCompatActivity() {
     companion object {
         private const val SIGN_IN_REQUEST_CODE = 101
     }
+
+    private var cek = false
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -65,9 +69,10 @@ class RegisterActivity : AppCompatActivity() {
                 binding.username.requestFocus()
                 return@setOnClickListener
             }
-            registrasiUser(email, password, nama, username)
-        }
 
+            registrasiUser(email, password, nama, username)
+
+        }
     }
 
     private fun updateUI(user: FirebaseUser?) {
@@ -102,6 +107,11 @@ class RegisterActivity : AppCompatActivity() {
         auth.createUserWithEmailAndPassword(email, password).addOnCompleteListener(this){
             if(it.isSuccessful){
                 saveUser(email, nama, username, password, progressDialog)
+                val dialog = BottomSheetDialog(this)
+                val view = layoutInflater.inflate(R.layout.bottom_sheet_dialog, null)
+                dialog.setCancelable(false)
+                dialog.setContentView(view)
+                dialog.show()
             }else{
                 val message = it.exception!!.toString()
                 Toast.makeText(this, "Error : $message", Toast.LENGTH_SHORT).show()
@@ -125,11 +135,7 @@ class RegisterActivity : AppCompatActivity() {
 
         ref.child(currentUserId).setValue(userMap).addOnCompleteListener {
             if (it.isSuccessful) {
-                progressDialog.dismiss()
-                Toast.makeText(this, "Register is Successfully", Toast.LENGTH_SHORT).show()
-                val intent = Intent(this@RegisterActivity, ProfileActivity::class.java)
-                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK or Intent.FLAG_ACTIVITY_NEW_TASK)
-                startActivity(intent)
+//                Toast.makeText(this, "Register is Successfully", Toast.LENGTH_SHORT).show()
             } else {
                 val message = it.exception!!.toString()
                 Toast.makeText(this, "Error : $message", Toast.LENGTH_SHORT).show()

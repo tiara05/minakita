@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item android:id="@+id/nav_home"
+        android:title="Home"
+        android:icon="@drawable/home_svg"/>
+
+    <item android:id="@+id/nav_deals"
+        android:title="Data"
+        android:icon="@drawable/ic_baseline_assignment_24"/>
+
+    <item android:id="@+id/nav_scan"
+        android:title=""/>
+
+    <item android:id="@+id/nav_finance"
+        android:title="Inbox"
+        android:icon="@drawable/ic_baseline_forward_to_inbox_24"/>
+
+    <item android:id="@+id/nav_profile"
+        android:icon="@drawable/ic_baseline_settings_24"
+        android:title="Setting"/>
+
+
+</menu>

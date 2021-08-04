@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:paddingBottom="60dp"
+    android:background="@color/colorWhite"
+    tools:context=".HomeFragment">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:contentInsetStart="0dp"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:background="@color/main"
+        android:id="@+id/toolbar">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="164dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="25dp"
+                android:fontFamily="@font/robotobold"
+                android:text="Selamat Datang"
+                android:textColor="@color/colorWhite"
+                android:textSize="14sp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/ic_account"
+                app:backgroundTint="@null"
+                android:layout_gravity="center_vertical|end"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="5dp"/>
+
+
+        </FrameLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nested"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusableInTouchMode="true"
+        android:animateLayoutChanges="false">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:baselineAligned="false">
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="143dp"
+                    android:contentDescription="@string/app_name"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/background" />
+
+
+                <com.loopeer.shadow.ShadowView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="5dp"
+                    android:background="@color/colorWhite"
+                    android:layout_marginStart="17dp"
+                    android:layout_marginEnd="17dp"
+                    app:cornerRadius="12dp"
+                    app:shadowRadius="100dp"
+                    app:shadowMarginTop="2dp"
+                    app:shadowMarginRight="2dp"
+                    app:shadowMarginLeft="2dp"
+                    app:shadowMarginBottom="10dp"
+                    app:shadowColor="#40AEA8A8"
+                    android:layout_marginTop="100dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="5dp"
+                        android:orientation="vertical"
+                        android:baselineAligned="false">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/robotomedium"
+                            android:text="@string/saldoanda"
+                            android:textColor="@color/black"
+                            android:textSize="12sp" />
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:baselineAligned="false">
+
+                            <TextView
+                                android:id="@+id/rp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/rp"
+                                android:fontFamily="@font/robotobold"
+                                android:layout_marginStart="20dp"
+                                android:textSize="16sp"
+                                android:textColor="@color/black"/>
+                            <TextView
+                                android:id="@+id/tv_saldo"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/saldo"
+                                android:fontFamily="@font/robotobold"
+                                android:textSize="24sp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginStart="4dp"
+                                android:textColor="@color/black"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </com.loopeer.shadow.ShadowView>
+
+                <SearchView
+                    android:id="@+id/searchview"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/shp_searchview"
+                    android:iconifiedByDefault="false"
+                    android:queryBackground="@null"
+                    android:queryHint="Find food, place, or service..."
+                    android:theme="@style/style_searcview"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginTop="25dp"/>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/promo"
+                    android:fontFamily="@font/robotobold"
+                    android:textColor="@color/colorBlack"
+                    android:layout_marginStart="20dp"
+                    android:textSize="16sp"/>
+
+            </FrameLayout>
+            <androidx.viewpager2.widget.ViewPager2
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:paddingTop="15dp"
+                android:id="@+id/berbagi"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="7dp"
+                android:background="#F3F3F3"
+                android:layout_marginTop="20dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Informasi Penting"
+                android:fontFamily="@font/robotobold"
+                android:textColor="@color/colorBlack"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:textSize="16sp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp">
+
+                <com.loopeer.shadow.ShadowView
+                    android:id="@+id/ls_bantuan"
+                    android:layout_width="0dp"
+                    android:layout_height="220dp"
+                    android:layout_weight="1"
+                    app:shadowRadius="100dp"
+                    app:shadowMarginBottom="15dp"
+                    app:shadowMarginRight="7dp"
+                    app:cornerRadius="12dp"
+                    app:foregroundColor="#80402588"
+                    app:backgroundColor="@color/colorWhite"
+                    android:background="@color/colorWhite"
+                    app:shadowColor="#40AEA8A8">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <com.makeramen.roundedimageview.RoundedImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="75dp"
+                            android:scaleType="fitXY"
+                            app:riv_corner_radius_top_left="12dp"
+                            app:riv_corner_radius_top_right="12dp"
+                            android:src="@drawable/gambar1"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Pusat Bantuan"
+                            android:fontFamily="@font/robotobold"
+                            android:textColor="@color/colorBlack"
+                            android:layout_marginStart="6dp"
+                            android:layout_marginTop="10dp"
+                            android:textSize="14sp"/>
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:text="Punya kendala atau \npertanyaan terkait OVO?\nkamu bisa kirim di sini"
+                            android:textSize="12sp"
+                            android:layout_marginStart="6dp"
+                            android:layout_marginTop="6dp"
+                            android:fontFamily="@font/robotoreguler"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal|bottom"
+                            android:layout_gravity="bottom"
+                            android:text="Lihat Bantuan"
+                            android:textColor="#11B8BC"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/robotobold"
+                            android:textSize="12sp"/>
+                    </LinearLayout>
+                </com.loopeer.shadow.ShadowView>
+
+                <com.loopeer.shadow.ShadowView
+                    android:layout_width="0dp"
+                    android:layout_height="220dp"
+                    android:layout_weight="1"
+                    app:shadowRadius="100dp"
+                    app:shadowMarginBottom="15dp"
+                    app:shadowMarginLeft="7dp"
+                    app:cornerRadius="12dp"
+                    app:backgroundColor="@color/colorWhite"
+                    android:background="@color/colorWhite"
+                    app:shadowColor="#40AEA8A8">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <com.makeramen.roundedimageview.RoundedImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="75dp"
+                            android:scaleType="fitXY"
+                            app:riv_corner_radius_top_left="12dp"
+                            app:riv_corner_radius_top_right="12dp"
+                            android:src="@drawable/gambar2"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Perlindungan COVID-19"
+                            android:fontFamily="@font/robotobold"
+                            android:textColor="@color/colorBlack"
+                            android:layout_marginStart="6dp"
+                            android:layout_marginTop="10dp"
+                            android:textSize="14sp"/>
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:text="Dapatkan Perlindungan \nCOVID-19 Bebas Biaya"
+                            android:textSize="12sp"
+                            android:layout_marginStart="6dp"
+                            android:layout_marginTop="6dp"
+                            android:fontFamily="@font/robotoreguler"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Daftar Sekarang"
+                            android:textColor="#11B8BC"
+                            android:layout_marginTop="10dp"
+                            android:gravity="center_horizontal|bottom"
+                            android:layout_gravity="bottom"
+                            android:fontFamily="@font/robotobold"
+                            android:textSize="12sp"/>
+                    </LinearLayout>
+                </com.loopeer.shadow.ShadowView>
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>
