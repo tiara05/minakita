@@ -1,2 +1,1 @@
-- Aplikasi Minakita -
-
+Aplikasi Minakita 
