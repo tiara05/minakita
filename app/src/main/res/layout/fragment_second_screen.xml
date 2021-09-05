@@ -72,7 +72,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.698" />
 
-    <Button
+    <com.google.android.material.chip.Chip
         android:id="@+id/next2"
         android:layout_width="match_parent"
         android:layout_height="60dp"
@@ -82,6 +82,8 @@
         android:text="Next"
         android:textStyle="bold"
         android:textSize="18dp"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
