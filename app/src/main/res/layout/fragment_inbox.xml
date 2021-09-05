@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#EFF0F4"
-    android:paddingBottom="50dp"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
     tools:context=".InboxFragment">
+
 
     <androidx.appcompat.widget.Toolbar
         android:layout_width="match_parent"
@@ -32,4 +32,17 @@
 
     </androidx.appcompat.widget.Toolbar>
 
-</FrameLayout>
+    <com.google.android.material.tabs.TabLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:tabSelectedTextColor="@color/colorWhite"
+        app:tabTextColor="@color/colorGray"
+        app:tabTextAppearance="@android:style/TextAppearance.Widget.TabWidget"
+        android:background="@color/main"
+        android:id="@+id/tabs"/>
+    <androidx.viewpager2.widget.ViewPager2
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/vp"/>
+
+</LinearLayout>

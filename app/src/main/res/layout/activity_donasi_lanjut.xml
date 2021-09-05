@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".DonasiActivity">
+    tools:context=".DonasiLanjutActivity">
 
     <androidx.appcompat.widget.Toolbar
         android:layout_width="match_parent"
@@ -39,7 +39,7 @@
                 android:layout_height="52dp"/>
 
             <TextView
-                android:text="Data Donatur"
+                android:text="Data Donasi"
                 android:gravity="center"
                 android:textStyle="bold"
                 android:textColor="@color/black"
@@ -47,7 +47,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"/>
 
-            <EditText
+            <TextView
                 android:id="@+id/nameEditText"
                 android:layout_marginStart="20dp"
                 android:layout_marginTop="20dp"
@@ -55,9 +55,10 @@
                 android:inputType="text"
                 android:hint="Nama Donatur"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
 
-            <EditText
+            <TextView
                 android:id="@+id/namainstansiEditText"
                 android:layout_marginStart="20dp"
                 android:layout_marginEnd="20dp"
@@ -65,15 +66,87 @@
                 android:inputType="text"
                 android:hint="Nama Sekolah/Perusahaan"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
 
-            <EditText
+            <TextView
                 android:id="@+id/meediasosialEditText"
                 android:layout_marginStart="20dp"
                 android:layout_marginEnd="20dp"
                 android:layout_marginTop="20dp"
                 android:inputType="text"
                 android:hint="Akun Media Sosial"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:layout_gravity="center"
+                android:id="@+id/chooseImageViewktp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:hint="Url Foto KTP"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:text="Data Donasi"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginTop="20dp"
+                android:textSize="19sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:id="@+id/donasiEditText"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:inputType="text"
+                android:hint="Nama Donasi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:id="@+id/deskripsiEditText"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="20dp"
+                android:inputType="text|textMultiLine"
+                android:hint="Deskripsi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:id="@+id/targetEditText"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="20dp"
+                android:inputType="text|textMultiLine"
+                android:hint="Target Donasi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:id="@+id/bataswaktiEditText"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="20dp"
+                android:inputType="text"
+                android:hint="Batas Waktu Dana"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:id="@+id/penerimaiEditText"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="20dp"
+                android:inputType="text"
+                android:hint="Penerima Donasi"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"/>
 
@@ -84,7 +157,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:text="Unggah KTP"
+                    android:text="Unggah Foto"
                     android:layout_marginStart="20dp"
                     android:layout_marginTop="20dp"
                     android:layout_marginEnd="20dp"/>

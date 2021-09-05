@@ -17,4 +17,6 @@
     <color name="colorWhite">#FFFFFF</color>
     <color name="colorBlack">#000000</color>
     <color name="colorGray">#828186</color>
+
+    <color name="separator_color">#26000000</color>
 </resources>

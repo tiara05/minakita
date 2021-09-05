@@ -7,15 +7,15 @@
         android:icon="@drawable/home_svg"/>
 
     <item android:id="@+id/nav_deals"
-        android:title="Data"
-        android:icon="@drawable/ic_baseline_assignment_24"/>
+        android:title="Donasi"
+        android:icon="@drawable/heart"/>
 
     <item android:id="@+id/nav_scan"
         android:title=""/>
 
     <item android:id="@+id/nav_finance"
         android:title="Inbox"
-        android:icon="@drawable/ic_baseline_forward_to_inbox_24"/>
+        android:icon="@drawable/inbox"/>
 
     <item android:id="@+id/nav_profile"
         android:icon="@drawable/ic_baseline_settings_24"

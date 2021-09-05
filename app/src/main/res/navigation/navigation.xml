@@ -13,8 +13,8 @@
 
     <fragment android:id="@+id/nav_deals"
         android:label="Deals"
-        tools:layout="@layout/fragment_data"
-        android:name="com.example.minakita.DataFragment"/>
+        tools:layout="@layout/fragment_donasi"
+        android:name="com.example.minakita.DonasiFragment"/>
 
 
     <fragment android:id="@+id/nav_finance"

@@ -33,7 +33,7 @@
     <androidx.core.widget.NestedScrollView
         android:id="@+id/nested"
         android:layout_width="match_parent"
-        android:layout_height="651dp"
+        android:layout_height="match_parent"
         android:animateLayoutChanges="false"
         android:focusableInTouchMode="true">
 
@@ -53,21 +53,22 @@
                 <com.google.android.material.button.MaterialButton
                     android:layout_width="60dp"
                     android:layout_height="60dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="30dp"
                     android:background="@drawable/ic_account"
                     app:backgroundTint="@null"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    android:layout_marginBottom="30dp"
                     app:layout_constraintBottom_toTopOf="@+id/login"
+                    app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/namaTextView"
-                    android:layout_marginTop="30dp"/>
+                    app:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="80dp"
                     android:layout_marginTop="50dp"
+                    android:id="@+id/nama"
                     android:fontFamily="@font/robotobold"
                     android:text="Tiara Rahmania H"
                     android:textColor="@color/colorBlack"
@@ -78,7 +79,7 @@
             <View
                 android:layout_width="match_parent"
                 android:layout_height="10dp"
-                android:background="#F3F3F3"/>
+                android:background="#F3F3F3" />
 
             <FrameLayout
                 android:id="@+id/notifikasi"
@@ -249,7 +250,7 @@
                     android:layout_marginStart="10dp"
                     android:layout_marginTop="20dp"
                     android:layout_marginBottom="20dp"
-                    android:background="@drawable/ic_baseline_volume_up_24"
+                    android:background="@drawable/ic_baseline_account_balance_wallet_24"
                     app:backgroundTint="@null"
                     app:layout_constraintBottom_toTopOf="@+id/login"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -263,14 +264,9 @@
                     android:layout_marginStart="80dp"
                     android:layout_marginTop="30dp"
                     android:fontFamily="@font/robotobold"
-                    android:text="Aksestabilitas Audio"
+                    android:text="Akun Bank"
                     android:textColor="@color/colorBlack"
                     android:textSize="16sp" />
-
-                <Switch
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_gravity="center_vertical|end" />
 
             </FrameLayout>
 
@@ -282,7 +278,7 @@
                 android:background="#F3F3F3" />
 
             <FrameLayout
-                android:id="@+id/logout"
+
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginStart="20dp"
@@ -309,6 +305,7 @@
                     android:layout_marginTop="30dp"
                     android:fontFamily="@font/robotobold"
                     android:text="Logout"
+                    android:id="@+id/logout"
                     android:textColor="@color/colorBlack"
                     android:textSize="16sp" />
             </FrameLayout>

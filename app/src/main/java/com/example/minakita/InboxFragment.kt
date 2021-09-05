@@ -5,6 +5,13 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.FragmentActivity
+import androidx.viewpager2.adapter.FragmentStateAdapter
+import androidx.viewpager2.widget.ViewPager2
+import com.example.minakita.inbox.BeritaFragment
+import com.example.minakita.inbox.NotifikasiFragment
+import com.google.android.material.tabs.TabLayout
+import com.google.android.material.tabs.TabLayoutMediator
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -21,12 +28,10 @@ class InboxFragment : Fragment() {
     private var param1: String? = null
     private var param2: String? = null
 
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        arguments?.let {
-            param1 = it.getString(ARG_PARAM1)
-            param2 = it.getString(ARG_PARAM2)
-        }
+
     }
 
     override fun onCreateView(
@@ -34,7 +39,22 @@ class InboxFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_inbox, container, false)
+        val view = inflater.inflate(R.layout.fragment_inbox, container, false)
+        val tabs = view.findViewById<TabLayout>(R.id.tabs)
+        val vp =  view.findViewById<ViewPager2>(R.id.vp)
+        vp.adapter = activity?.let { ViewPagerAdapter(it) }
+
+        TabLayoutMediator(tabs, vp,
+            TabLayoutMediator.TabConfigurationStrategy { tab, position ->
+                when (position) {
+                    0 -> tab.text = "Notifikasi"
+                    1 -> tab.text = "Berita"
+                    else -> {
+                    }
+                }
+            }).attach()
+
+        return view
     }
 
     companion object {
@@ -55,5 +75,20 @@ class InboxFragment : Fragment() {
                     putString(ARG_PARAM2, param2)
                 }
             }
+    }
+
+    class ViewPagerAdapter internal constructor(fragmentActivity: FragmentActivity) :
+        FragmentStateAdapter(fragmentActivity) {
+        override fun createFragment(position: Int): Fragment {
+            when (position) {
+                0 -> return BeritaFragment()
+                1 -> return NotifikasiFragment()
+            }
+            return NotifikasiFragment()
+        }
+
+        override fun getItemCount(): Int {
+            return 2
+        }
     }
 }
