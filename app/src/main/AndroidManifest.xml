@@ -11,7 +11,8 @@
         android:roundIcon="@drawable/logo1"
         android:supportsRtl="true"
         android:theme="@style/Theme.Internship">
-        <activity android:name=".TransaksiActivity"></activity>
+        <activity android:name=".LoginActivity"></activity>
+        <activity android:name=".TransaksiActivity" />
         <activity android:name=".DonasiLanjutActivity" />
         <activity android:name=".FaqActivity" />
         <activity android:name=".TentangActivity" />
@@ -21,7 +22,7 @@
         <activity android:name=".ProfileActivity" />
         <activity android:name=".RegisterActivity" />
         <activity android:name=".DetailsActivity" />
-        <activity android:name=".DonasiActivity"></activity>
+        <activity android:name=".DonasiActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

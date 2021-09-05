@@ -87,10 +87,10 @@ class SettingFragment : Fragment() {
         view.logout.setOnClickListener{
             if (logout.text == getString(R.string.logout)) {
                 auth.signOut()
-                startActivity(Intent(context, SettingFragment::class.java))
+
             }
             else{
-                startActivity(Intent(context, RegisterActivity::class.java))
+                startActivity(Intent(context, LoginActivity::class.java))
             }
         }
 
